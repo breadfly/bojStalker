@@ -23,7 +23,7 @@ result = []
 for problem_id in problem_list:
 	already[int(problem_id.get_text())] = 1
 
-status_url = "https://www.acmicpc.net/status/?user_id=" + user_id + "&result_id=4"
+status_url = "https://www.acmicpc.net/status?problem_id=&user_id=" + user_id + "&language_id=-1&result_id=4"
 
 while 1 :
 	req = Request(status_url, headers=hdr)
